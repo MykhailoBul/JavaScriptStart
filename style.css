@@ -1,4 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
-    font-size: 2em;
+#countlabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+#btnContainer {
+    text-align: center;
+}
+.buttons {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    color: white;
+    background-color: #00c8ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+#decrementbtn {
+    background-color: #fc0707;
+    transition: background-color 0.25s;
+}
+#decrementbtn:hover {
+    background-color: #c60808;
+}
+#resetbtn {
+    background-color: #00c8ff;
+    transition: background-color 0.25s;
+}
+#resetbtn:hover {
+    background-color: #007bb8;
+}
+#incrementbtn {
+    background-color: #00c851;
+    transition: background-color 0.25s;
+}
+#incrementbtn:hover {
+    background-color: #009c40;
 }
