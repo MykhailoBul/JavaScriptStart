@@ -4,7 +4,8 @@
 // window.alert('This is an aleert')   // shows an alert box
 // window.alert('I like TV')
 
-// //  Variables
+//       Variables
+
 // let fullName = "Michael";
 // let age = 25;
 // let isStudent = false;
@@ -22,7 +23,9 @@
 //     This is a comment
 // */
 
-// //  Arithmetic operations
+
+//       Arithmetic operations
+
 // let students = 30;
 
 // students = students + 1;     // increment students by 1
@@ -46,7 +49,8 @@
 // let result = 3 + 4 * 2;   // result is 11 due to operator precedence
 // console.log(result);     // Print the result
 
-//   How to accept user input
+
+//      How to accept user input
 
 // let username;
 // username = window.prompt("What is your name?");   // prompt user for their name (input)
@@ -57,7 +61,8 @@
 //     document.getElementById("myH1").textContent = `Welcome, ${username}`;   // set the text of the h1 to "Welcome, [username]"
 // };
 
-//  Type conversion
+
+//       Type conversion
 
 // let age = window.prompt("How old are you?");   // prompt user for their age (input)
 // age = Number(age);   // convert the input string to a number
@@ -80,14 +85,16 @@
 // console.log(y, typeof y);   // Print y (string)
 // console.log(z, typeof z);   // Print z (boolean)
 
-//  Constant variable
-const PI = 3.14;   // pi is a constant variable
-let radius;
-let circumference;
 
-document.getElementById("submitBtn").onclick = function(){
-    radius = document.getElementById("myText").value;   // get the radius from the input field
-    radius = Number(radius);   // convert the input string to a number
-    circumference = 2 * PI * radius;   // calculate the circumference
-    document.getElementById("H3").textContent = circumference + "cm";   // display the circumference
-};
+//      Constant variables
+
+// const PI = 3.14;   // pi is a constant variable
+// let radius;
+// let circumference;
+
+// document.getElementById("submitBtn").onclick = function(){
+//     radius = document.getElementById("myText").value;   // get the radius from the input field
+//     radius = Number(radius);   // convert the input string to a number
+//     circumference = 2 * PI * radius;   // calculate the circumference
+//     document.getElementById("H3").textContent = circumference + " cm";   // display the circumference
+// };
