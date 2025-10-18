@@ -81,13 +81,64 @@
 // console.log(z, typeof z);   // Print z (boolean)
 
 //  Constant variable
-const PI = 3.14;   // pi is a constant variable
-let radius;
-let circumference;
+// const PI = 3.14;   // pi is a constant variable
+// let radius;
+// let circumference;
 
-document.getElementById("submitBtn").onclick = function(){
-    radius = document.getElementById("myText").value;   // get the radius from the input field
-    radius = Number(radius);   // convert the input string to a number
-    circumference = 2 * PI * radius;   // calculate the circumference
-    document.getElementById("H3").textContent = circumference + "cm";   // display the circumference
-};
+// document.getElementById("submitBtn").onclick = function(){
+//     radius = document.getElementById("myText").value;   // get the radius from the input field
+//     radius = Number(radius);   // convert the input string to a number
+//     circumference = 2 * PI * radius;   // calculate the circumference
+//     document.getElementById("H3").textContent = circumference + "cm";   // display the circumference
+// };
+
+//  Math object
+// let x = 3.21;
+// let y = 2;
+// let z;
+
+// z = Math.round(x);    // round x to the nearest integer
+// z = Math.floor(x);   // round x down to the nearest integer
+// z = Math.ceil(x);    // round x up to the nearest integer
+// z = Math.trunc(x);   // remove the decimal part of y
+// z = Math.pow(x, y);   // raise y to the power of x
+// z = Math.sqrt(x);   // get the square root of x 
+// z = Math.log(x);   // get the natural logarithm of x
+// z = Math.sin(x);   // get the sine of x (x is in radians)
+// z = Math.cos(x);  // get the cosine of x (x is in radians)
+// z = Math.tan(x);  // get the tangent of x (x is in radians)
+// z = Math.abs(-x);   // get the absolute value of x
+// z = Math.sign(x);   // get the sign of x (1 if positive, -1 if negative, 0 if zero)
+// z = Math.min(x, y, z);   // get the minimum value
+// z = Math.max(x, y, z);   // get the maximum value
+
+// console.log(z);   
+
+//  Generating random numbers
+// const min = 50;   // minimum value
+// const max = 100;  // maximum value
+
+// let randomNumber = Math.random();   // generate a random number between 0 and 1
+// let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;   // generate a random number between min and max (inclusive)
+
+// console.log(randomNum);
+
+//  Random number generator for dice roll
+// const myBtn = document.getElementById("myBtn");
+// const Label1 = document.getElementById("Label1");
+// const Label2 = document.getElementById("Label2");
+// const Label3 = document.getElementById("Label3");
+// const min = 1;
+// const max = 6;
+// let randomNum1;
+// let randomNum2;
+// let randomNum3;
+
+// myBtn.onclick = function() {
+//     randomNum1 = Math.floor(Math.random() * max) + min; 
+//     randomNum2 = Math.floor(Math.random() * max) + min; 
+//     randomNum3 = Math.floor(Math.random() * max) + min;   
+//     Label1.textContent = randomNum1;   
+//     Label2.textContent = randomNum2; 
+//     Label3.textContent = randomNum3; 
+// }
