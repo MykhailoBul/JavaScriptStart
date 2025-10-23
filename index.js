@@ -169,16 +169,31 @@
 // } else {
 //     console.log("You are not a student.");
 // }
-let age = 20;
-let hasLicense = false;
 
-if (age >= 18) {
-    console.log("You can drive.");
-    if (hasLicense) {
-        console.log("You have a license.");
-    } else {
-        console.log("You do not have a license.");
-    }
+// let age = 20;
+// let hasLicense = true;
+
+// if (age >= 18) {
+//     console.log("You can drive.");
+//     if (hasLicense) {
+//         console.log("You have a license.");
+//     } else {
+//         console.log("You do not have a license.");
+//     }
+// } else {
+//     console.log("You cannot drive.");
+// }
+
+let age = -1;
+
+if (age < 0) {
+    console.log("Invalid age.");
+} else if (age == 0) {
+    console.log("You are too young.");
+} else if (age < 18) {
+    console.log("You are a minor.");
+} else if (age < 100) {
+    console.log("You are too old.");
 } else {
-    console.log("You cannot drive.");
+    console.log("You are an adult.");
 }
