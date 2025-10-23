@@ -154,11 +154,31 @@
     //     console.log("You are a minor.");
     // }
 
-let time = 10;
-if (time < 12) {
-    console.log("Good morning!");
-} else if (time < 18) {
-    console.log("Good afternoon!");
+// let time = 10;
+// if (time < 12) {
+//     console.log("Good morning!");
+// } else if (time < 18) {
+//     console.log("Good afternoon!");
+// } else {
+//     console.log("Good evening!");
+// }
+
+// let isStudent = false;
+// if (isStudent) {
+//     console.log("You are a student.");
+// } else {
+//     console.log("You are not a student.");
+// }
+let age = 20;
+let hasLicense = false;
+
+if (age >= 18) {
+    console.log("You can drive.");
+    if (hasLicense) {
+        console.log("You have a license.");
+    } else {
+        console.log("You do not have a license.");
+    }
 } else {
-    console.log("Good evening!");
+    console.log("You cannot drive.");
 }
