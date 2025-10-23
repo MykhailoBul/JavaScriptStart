@@ -1,6 +1,8 @@
 // console.log("Hello, World!");
 // console.log("I like TV");
 
+// const { use } = require("react");
+
 // window.alert('This is an aleert')   // shows an alert box
 // window.alert('I like TV')
 
@@ -184,16 +186,243 @@
 //     console.log("You cannot drive.");
 // }
 
-let age = -1;
+// let age = -1;
 
-if (age < 0) {
-    console.log("Invalid age.");
-} else if (age == 0) {
-    console.log("You are too young.");
-} else if (age < 18) {
-    console.log("You are a minor.");
-} else if (age < 100) {
-    console.log("You are too old.");
-} else {
-    console.log("You are an adult.");
-}
+// if (age < 0) {
+//     console.log("Invalid age.");
+// } else if (age == 0) {
+//     console.log("You are too young.");
+// } else if (age < 18) {
+//     console.log("You are a minor.");
+// } else if (age < 100) {
+//     console.log("You are too old.");
+// } else {
+//     console.log("You are an adult.");
+// }
+
+// const ageInput = document.getElementById("ageInput"); // age input field
+// const submitBtn = document.getElementById("submitBtn");
+// const result = document.getElementById("result");
+
+// submitBtn.onclick = function() {
+//     let age = Number(ageInput.value);
+//     if (age < 0) {
+//         result.textContent = "Invalid age.";
+//     } else if (age == 0) {
+//         result.textContent = "You are too young.";
+//     } else if (age < 18) {
+//         result.textContent = "You are a minor.";
+//     } else if (age >= 100) {
+//         result.textContent = "You are too old.";
+//     } else {
+//         result.textContent = "You are an adult.";
+//     }
+// }
+
+//  checkbox example
+
+// const checkbox = document.getElementById("Checkbox");
+// const visaBtn = document.getElementById("visaBtn");
+// const mastercardBtn = document.getElementById("mastercardBtn");
+// const paypalBtn = document.getElementById("paypalBtn");
+// const result = document.getElementById("result");
+// const payment = document.getElementById("payment");
+// const submit = document.getElementById("submitBtn");
+
+// submit.onclick = function() {
+//     if (checkbox.checked) {
+//         result.textContent = "You are subscribed.";
+//     } else {
+//         result.textContent = "You are not subscribed.";
+//     }
+
+//     if (visaBtn.checked) {
+//         payment.textContent = "You have selected Visa.";
+//     } else if (mastercardBtn.checked) {
+//         payment.textContent = "You have selected MasterCard.";
+//     } else if (paypalBtn.checked) {
+//         payment.textContent = "You have selected PayPal.";
+//     } else {
+//         payment.textContent = "No payment method selected.";
+//     }
+// }
+
+// // ternary operator
+// condition ? codeifTrue : codeifFalse;
+
+// let age = 20;
+// let message = age >= 18 ? "You are an adult." : "You are a minor.";
+// console.log(message);
+
+// let time = 14;
+// let greeting = time < 12 ? "Good morning!" : time < 18 ? "Good afternoon!" : "Good evening!";
+// console.log(greeting);
+
+// let isStudent = true;
+// let message = isStudent ? "You are a student." : "You are not a student.";
+// console.log(message);
+
+// let purchaseAmount = 120;
+// let discount = purchaseAmount >= 100 ? 10 : 0;
+// console.log(`Your discount is $${purchaseAmount - purchaseAmount * (discount / 100)}.`);
+
+// // Switch statement
+
+// let day = 3;
+
+// switch (day) {
+//     case 1:
+//         console.log("It is Monday");
+//         break;
+//     case 2:
+//         console.log("It is Tuesday");
+//         break;
+//     case 3:
+//         console.log("It is Wednesday");
+//         break;
+//     case 4:
+//         console.log("It is Thursday");
+//         break;
+//     case 5:
+//         console.log("It is Friday");
+//         break;
+//     case 6:
+//         console.log("It is Saturday");
+//         break;
+//     case 7:
+//         console.log("It is Sunday");
+//         break;
+//     default:
+//         console.log(`${day} - is not a day`);
+// }
+
+// let testScore = 20;
+// let letterGrade;
+
+// switch (true) {
+//     case (testScore === 100):
+//         letterGrade = "A+";
+//         break;
+//     case (testScore >= 90):
+//         letterGrade = "A";
+//         break;
+//     case (testScore >= 80):
+//         letterGrade = "B";
+//         break;  
+//     case (testScore >= 70):
+//         letterGrade = "C";
+//         break;
+//     case (testScore >= 60):
+//         letterGrade = "D";
+//         break;
+//     case (testScore < 60):
+//         letterGrade = "F";
+//         break;
+//     default:
+//         letterGrade = "Invalid score";  
+// }
+// console.log(`Your letter grade is ${letterGrade}.`);
+
+// String methods and properties
+
+// // let userName = "MixaMega";
+
+// console.log(userName.charAt(0));   // first character of the string
+// console.log(userName.lastIndexOf("a"));   // last index of "a" (7)
+// console.log(userName.length);   // length of the string (8)
+// console.log(userName.toUpperCase());   // convert string to uppercase (MIXAMEGA)
+// console.log(userName.toLowerCase());   // convert string to lowercase (mixamega)
+// console.log(userName.includes("world"));   // check if string includes "world" (false)
+// console.log(userName.replace("Mega", " The Great"));   // replace "Mega" with "The Great" (Mixa The Great)
+// console.log(userName.slice(0, 4));   // get substring from index 0 to 4 (Mixa)
+// console.log(userName.split("e"));   // split string at each "e" (["MixaM", "ga"])
+// console.log(userName.trim());   // remove whitespace from both ends of the string (MixaMega)
+// console.log(userName.repeat(2));   // repeat the string twice (MixaMegaMixaMega)
+// console.log(userName.concat(" "));   // concatenate a space to the string (MixaMega )
+// console.log(userName.charCodeAt(0));   // get the Unicode of the character at index 0 (77)
+// console.log(userName.codePointAt(1));   // get the Unicode of the character at index 1 (105)
+// console.log(userName.padStart(10, 'X'));   // create string from Unicode values (XXMixaMega)
+// console.log(userName.startsWith("Mixa"));   // check if string starts with "Mixa" (true)
+
+// let phoneNumber = "123-456-7890";
+// console.log(phoneNumber.replaceAll("-", "") );  // remove all dashes from the phone number
+
+// string slicking
+
+// let firstName = fullName.slice(0, 4);
+// let lastName = fullName.slice(4, 9);
+
+// let firstChar = fullName.slice(0, 1);
+// let lastChar = fullName.slice(-1);
+
+// let firstName = fullName.slice(0, fullName.indexOf(' '));
+// let lastName = fullName.slice(fullName.indexOf(' ') + 1);
+
+// console.log(firstName);
+// console.log(lastName);
+
+// const email = "MishaBul@gmail.com";
+
+// let Name = email.slice(0, email.indexOf('@'));
+// let Adress = email.slice(email.indexOf('@') + 1);
+
+// console.log(Adress);
+// console.log(Name);
+
+// // NO Method chaining
+
+// let username = window.prompt('Enter your username:');
+
+// username = username.trim();
+// let letter = username.charAt(0);
+// letter = letter.toUpperCase();
+// let Charts = username.slice(1);
+// Charts = Charts.toLowerCase()
+// username = letter + Charts
+
+// console.log(username);
+
+// // Method chaining
+
+// let username = window.prompt('Enter your username:');
+// username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+
+// console.log(username);
+
+// Logical operators 
+// || OR
+// && AND
+// ! NOT
+
+// const temp = 20;
+
+// if(temp > 0 && temp <= 30){
+//     console.log("The weather is good");
+// }
+// else{
+//     console.log("The weather is bad");
+// }
+
+// // const isSunny = false;
+
+// if(!isSunny){
+//     console.log('It is cloudy');
+// }
+// else{
+//     console.log('It is sunny');
+// }
+
+// = assigment opertator
+// ==
+// ===
+// !=
+// !==
+
+// const PI = 3.14;
+
+// if(PI == '3.14'){
+//     console.log("That is PI");
+// }
+// else{
+//     console.log("That is not PI");
+// }
