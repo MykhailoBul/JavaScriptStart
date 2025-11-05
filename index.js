@@ -290,6 +290,7 @@
 // console.log(userName.codePointAt(1));   // get the Unicode of the character at index 1 (105)
 // console.log(userName.padStart(10, 'X'));   // create string from Unicode values (XXMixaMega)
 // console.log(userName.startsWith("Mixa"));   // check if string starts with "Mixa" (true)
+// console.log(userName.join());   
 
 // let phoneNumber = "123-456-7890";
 // console.log(phoneNumber.replaceAll("-", "") );  // remove all dashes from the phone number
@@ -372,4 +373,4 @@
 // }
 // else{
 //     console.log("That is not PI");
-// }
+// }    
