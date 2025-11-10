@@ -20,7 +20,13 @@ if (apple) {
 }
 console.log(apple);
 
-shoppingCart.shift(item => item.name === "banana");
+let banana = shoppingCart.findIndex(item => item.name === "banana");
+if (banana !== -1) {
+  shoppingCart.shift(item => item.name === "banana");
+} else {
+  console.log("Banana not found — nothing to remove.");
+  console.log(shoppingCart);
+}
 console.log(shoppingCart);
 
 let productName = shoppingCart.map(item => item.name);
@@ -29,5 +35,5 @@ console.log(productName);
 let hasMilk = shoppingCart.some(item => item.name === "milk");
 console.log("Is milk in shopping card?", hasMilk);
 
-let sorted = shoppingCart.sort((max, min) => max.quantity - min.quantity);
-console.log(sorted);
+shoppingCart.sort((a, b) => b.quantity - a.quantity);
+console.log(shoppingCart);
